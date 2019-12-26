@@ -8,8 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gilboagl/circleci-test.git"
+    "url": "https://github.com/gilboagl/circleci-test"
   },
+  "repositoryUrl": "https://github.com/gilboagl/circleci-test.git",
   "author": "",
   "license": "ISC",
   "bugs": {
