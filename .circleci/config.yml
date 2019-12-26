@@ -35,7 +35,7 @@ jobs:
       # run tests!
   publish-github-release:
     docker:
-      - image: cibuilds/github:0.10
+      - image: circleci/node:10.17
     steps:
       - attach_workspace:
           at: ./build
