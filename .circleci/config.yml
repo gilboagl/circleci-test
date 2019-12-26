@@ -3,8 +3,6 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2.1
-orbs:
-  semantic-versioning: payfit/semantic-versioning@0.60.0
 jobs:
   build:
     docker:
@@ -43,8 +41,7 @@ jobs:
           at: ./build
       - run:
           name: "Publish Release on GitHub"
-          command: |
-            ghr -t ${GITHUB_TOKEN} -u ${CIRCLE_PROJECT_USERNAME} -r ${CIRCLE_PROJECT_REPONAME} -c ${CIRCLE_SHA1} -delete ${VERSION} ./build/
+          command: npx semantic-release
 
 workflows:
   version: 2
