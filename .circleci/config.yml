@@ -41,7 +41,7 @@ jobs:
           at: ./build
       - run:
           name: "Publish Release on NPM"
-          command: npx semantic-release
+          command: pwd && echo $(<package.json) && px semantic-release
 
 workflows:
   version: 2
