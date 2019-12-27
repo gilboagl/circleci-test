@@ -16,25 +16,12 @@ jobs:
       # Download and cache dependencies
       - run: pwd && ls -ltr
       - run: yarn install
-
-      # run tests!
-  publish-npm-release:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ./repo
-      - run:
-          name: "Publish Release on NPM"
-          command: cd repo && ls -ltr && echo $(<package.json) && npx semantic-release
-
+      - run: npx semantic-release
 workflows:
   version: 2
   build_and_publish:
     jobs:
-      - build
-      - publish-npm-release:
-          requires:
-            - build
+      - build:
           filters:
             branches:
               only: master
