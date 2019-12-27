@@ -21,8 +21,6 @@ jobs:
   publish-github-release:
     <<: *defaults
     steps:
-      - attach_workspace:
-          at: ./repo
       - run:
           name: "Publish Release on NPM"
           command: ls -ltr && echo $(<package.json) && npx semantic-release
