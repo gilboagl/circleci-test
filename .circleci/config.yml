@@ -42,6 +42,7 @@ workflows:
       - publish-github-release:
           requires:
             - build
+            - package.json
           filters:
             branches:
               only: master
