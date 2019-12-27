@@ -16,6 +16,7 @@ jobs:
       # Download and cache dependencies
       - run: pwd && ls -ltr
       - run: yarn install
+      - run: npm config set allow-same-version true
       - run: npx semantic-release
 workflows:
   version: 2
