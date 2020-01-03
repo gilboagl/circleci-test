@@ -6,7 +6,7 @@
     "@semantic-release/npm",
     "@semantic-release/git",
     ["@semantic-release/exec", {
-         "publishCmd": " cd ./packages/test1 && yarn publish --new-version ${nextRelease.version} && cd ../test2 && yarn publish --new-version ${nextRelease.version}"
+         "publishCmd": "pwd && cd ./packages/test1 && yarn publish --new-version ${nextRelease.version} && pwd && cd ../test2 && yarn publish --new-version ${nextRelease.version}"
     }]
   ],
 }
