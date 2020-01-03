@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/gilboagl/circleci-test/compare/v1.1.10...v1.1.11) (2020-01-03)
+
+
+### Bug Fixes
+
+* test 2 ([96fe588](https://github.com/gilboagl/circleci-test/commit/96fe588b7381e832401f72edfa8caca68ad62953))
+
 ## [1.1.10](https://github.com/gilboagl/circleci-test/compare/v1.1.9...v1.1.10) (2020-01-03)
 
 
