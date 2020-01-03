@@ -8,3 +8,5 @@ sleep 5;
 cd ../test2;
 pwd;
 yarn publish --new-version $1
+
+echo "done here"
