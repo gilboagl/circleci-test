@@ -5,7 +5,7 @@
     "@semantic-release/changelog",
     "@semantic-release/git",
     ["@semantic-release/exec", {
-         "publishCmd": " cd packages/web && yarn publish --new-version ${nextRelease.version} && cd ../native && yarn publish --new-version ${nextRelease.version}}"
+         "publishCmd": " cd packages/test1 && yarn publish --new-version ${nextRelease.version} && cd ../test2 && yarn publish --new-version ${nextRelease.version}}"
     }]
   ],
 }

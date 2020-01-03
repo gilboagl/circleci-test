@@ -9,7 +9,6 @@ jobs:
       - image: circleci/node:10.17
     steps:
       - checkout
-
       # Download and cache dependencies
       - run:
           name: install
