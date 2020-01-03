@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/gilboagl/circleci-test/compare/v1.1.9...v1.1.10) (2020-01-03)
+
+
+### Bug Fixes
+
+* split publishcmd to 2 commands ([853fea9](https://github.com/gilboagl/circleci-test/commit/853fea9fc16c6bf64f6df8cebe8b72e624c8b7ec))
+
 ## [1.1.9](https://github.com/gilboagl/circleci-test/compare/v1.1.8...v1.1.9) (2020-01-03)
 
 
