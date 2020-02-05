@@ -19,9 +19,6 @@ jobs:
       - run:
           name: semantic
           command: npx semantic-release
-      - run:
-          name: merge back to delevlop
-          command: git checkout origin/develop && git reset -- hard && git merge origin/master && git commit -m "develop to master" && git push
 workflows:
   version: 2
   build-deploy-test:
