@@ -19,3 +19,6 @@ jobs:
       - run:
           name: semantic
           command: npx semantic-release
+      - run:
+          name: merge back to delevlop
+          command: git checkout develop && git merge master && git commit -m "develop to master" && git push
