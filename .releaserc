@@ -4,6 +4,5 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     "@semantic-release/npm",
-  ],
-  "branches": ["develop", "master", "next"]
+  ]
 }
