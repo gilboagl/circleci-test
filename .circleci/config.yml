@@ -26,8 +26,8 @@ jobs:
           name: Git config name
           command: git config --global user.name "jackm-ts"
       - run:
-          name: merge to develop
-          command: git checkout -b develop origin/develop && git merge origin/master && git push
+          name: Merge to develop
+          command: git checkout -b develop origin/develop && git merge origin/master && git push origin develop
 workflows:
   version: 2
   build-deploy-test:
