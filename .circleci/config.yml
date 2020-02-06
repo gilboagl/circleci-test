@@ -26,6 +26,9 @@ jobs:
           name: Git config name
           command: git config --global user.name "jackm-ts"
       - run:
+          name: change origin
+          command: git remote rm origin && git remote add origin https://gilboagl:$GH_TOKEN@github.com/gilboagl/circleci-test.git
+      - run:
           name: Merge to develop
           command: git checkout -b develop origin/develop && git merge origin/master && git push origin develop
 workflows:
