@@ -21,7 +21,7 @@ jobs:
           command: npx semantic-release
       - run:
           name: Merge to develop
-          command: git checkout -b develop origin/develop && git merge origin/master && git push origin develop
+          command: git checkout -b develop origin/develop && git merge --squash origin/master && git push origin develop
 workflows:
   version: 2
   build-deploy-test:
