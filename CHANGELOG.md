@@ -1,4 +1,3 @@
-## [1.1.31](https://github.com/gilboagl/circleci-test/compare/v1.1.30...v1.1.31) (2020-02-07)
 
 
 ### Bug Fixes
