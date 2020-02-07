@@ -20,6 +20,9 @@ jobs:
           name: semantic
           command: npx semantic-release
       - run:
+          name: add user Globals
+          command: git config --global user.email "gilboagl@gmail.com" && git config --global user.name "Gilboa Globen"
+      - run:
           name: Merge to develop
           command: git checkout -b develop origin/develop && git merge --squash origin/master && git commit -m "master to develop" && git push origin develop
 workflows:
