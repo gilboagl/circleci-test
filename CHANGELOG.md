@@ -1,3 +1,10 @@
+## [1.1.37](https://github.com/gilboagl/circleci-test/compare/v1.1.36...v1.1.37) (2020-02-07)
+
+
+### Bug Fixes
+
+* Merge pull request [#30](https://github.com/gilboagl/circleci-test/issues/30) from gilboagl/develop ([3303083](https://github.com/gilboagl/circleci-test/commit/33030837a978dbdaed9666385008a787a597f0b0))
+
 ## [1.1.36](https://github.com/gilboagl/circleci-test/compare/v1.1.35...v1.1.36) (2020-02-07)
 
 
