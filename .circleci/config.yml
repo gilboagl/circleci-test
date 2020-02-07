@@ -24,7 +24,7 @@ jobs:
           command: git config --global user.email "gilboagl@gmail.com" && git config --global user.name "Gilboa Globen"
       - run:
           name: Merge to develop
-          command: git fetch && git pull && git checkout develop && git merge master && git commit -m "master to develop" && git push origin develop
+          command: git fetch && git pull && git checkout develop && git merge master && git commit -m "master to develop" && git push
 workflows:
   version: 2
   build-deploy-test:
